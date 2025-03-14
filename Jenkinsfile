@@ -1,5 +1,8 @@
 pipeline {
 	agent any
+	environment {
+        registry = "605134450606.dkr.ecr.eu-north-1.amazonaws.com/alexobsqura/node-app-repo"
+    	}
 	stages {
 		stage ('Helm Deploy') {
 	          steps {
